@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug LinuxSwiftPackage",
+            "program": "${workspaceFolder:LinuxSwiftPackage}/.build/debug/LinuxSwiftPackage",
+            "args": [],
+            "cwd": "${workspaceFolder:LinuxSwiftPackage}",
+            "preLaunchTask": "swift: Build Debug LinuxSwiftPackage"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release LinuxSwiftPackage",
+            "program": "${workspaceFolder:LinuxSwiftPackage}/.build/release/LinuxSwiftPackage",
+            "args": [],
+            "cwd": "${workspaceFolder:LinuxSwiftPackage}",
+            "preLaunchTask": "swift: Build Release LinuxSwiftPackage"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Test LinuxSwiftPackage",
+            "program": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+            "args": [
+                ".build/debug/LinuxSwiftPackagePackageTests.xctest"
+            ],
+            "cwd": "${workspaceFolder:LinuxSwiftPackage}",
+            "preLaunchTask": "swift: Build All"
+        }
+    ]
+}

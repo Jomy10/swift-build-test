@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "sdk": "/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin/swift",
+    "toolchain-bin-dir": "/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin",
+    "target": "x86_64-apple-macosx",
+    "dynamic-library-extension": "lib",
+    "extra-cc-flags": [
+    ],
+    "extra-swiftc-flags": [
+        "-L",
+        "lib_mac",
+        "-lmy_rust_lib",
+        "-import-objc-header",
+        "bridging-header.h"
+    ],
+    "extra-cpp-flags": []
+}
